@@ -11,15 +11,22 @@ namespace Teht05
         static void Main(string[] args)
         {
             //annetaan arvot sekuntti/tunti/minuutti
-            int sekuntti, tunti, minuutti;
+            int number, sekuntti, minuutti, tunti;
             Console.WriteLine("Anna sekunnit?");
             string line = Console.ReadLine();
-            sekuntti = int.Parse(line);
-            //tehdään ohjelma joka laskee sekunnit ja sen perusteella tulostaa oiekan tuloksen
-            
-            //minuutit ensimmäiseksi
-            //jotainjotain
+            number = int.Parse(line);
 
+            //tehdään ohjelma joka jakaa annetut sekunnit minuuteiksi ja minuutit tunniksi
+            sekuntti = (number % 3600) % 60;
+            minuutti = (number / 60) %60;
+            tunti = (number / 3600) %60;
+            
+
+            //tulostetaan järjestyksessä tunnit/minuutit/sekunnit
+            Console.WriteLine("Lopputulos " + tunti + " tuntia " + minuutti + " minuuttia " + sekuntti + " sekunttia "  );
+            {
+                Console.ReadLine();
+            }
         }
     }
 }
