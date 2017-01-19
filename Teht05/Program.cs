@@ -18,6 +18,7 @@ namespace Teht05
             //tehdään ohjelma joka laskee sekunnit ja sen perusteella tulostaa oiekan tuloksen
             
             //minuutit ensimmäiseksi
+            //jotainjotain
 
         }
     }
